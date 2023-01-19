@@ -21,56 +21,41 @@ var buttonD = document.getElementById("d");
 
 // Quiz questions
 var quizQuestions = [{
-    question: "How many elements can you apply an 'ID' attribute to?",
-    choiceA: "As many as you want",
-    choiceB: "3",
-    choiceC: "1",
-    choiceD: "128",
+    question: "Commonly used data types DO NOT include:",
+    choiceA: "Strings",
+    choiceB: "booleans",
+    choiceC: "alerts",
+    choiceD: "numbers",
     correctAnswer: "c"},
   {
-    question: "What does DOM stand for?",
-    choiceA: "Document Object Model",
-    choiceB: "Display Object Management",
-    choiceC: "Digital Ordinance Model",
-    choiceD: "Desktop Oriented Mode",
-    correctAnswer: "a"},
+    question: "The conditions in an if / else statment is enclosed within _____.",
+    choiceA: "quotes",
+    choiceB: "curley brackets",
+    choiceC: "parentheses",
+    choiceD: "square brackets",
+    correctAnswer: "c"},
    {
-    question: "What is used primarily to add styling to a web page?",
-    choiceA: "HTML",
-    choiceB: "CSS",
-    choiceC: "Python",
-    choiceD: "React.js",
-    correctAnswer: "b"},
-    {
-    question: "What HTML tags are JavaScript code wrapped in?",
-    choiceA: "&lt;div&gt;",
-    choiceB: "&lt;link&gt;",
-    choiceC: "&lt;head&gt;",
-    choiceD: "&lt;script&gt;",
+    question: "Arrays in Javascript can be used to store _____.",
+    choiceA: "numbers and strings",
+    choiceB: "other arrays",
+    choiceC: "booleans",
+    choiceD: "all of the above",
     correctAnswer: "d"},
     {
-    question: "When is localStorage data cleared?",
-    choiceA: "No expiration time",
-    choiceB: "On page reload",
-    choiceC: "On browser close",
-    choiceD: "On computer restart",
-    correctAnswer: "a"},  
-    {
-    question: "What does WWW stand for?",
-    choiceA: "Web World Workings",
-    choiceB: "Weak Winter Wind",
-    choiceC: "World Wide Web",
-    choiceD: "Wendy Wants Waffles",
+    question: "String values are enclosed within _____ when being assigned to variables.",
+    choiceA: "commas",
+    choiceB: "curley brackets",
+    choiceC: "quotes",
+    choiceD: "parenthese",
     correctAnswer: "c"},
     {
-    question: "What HTML attribute references an external JavaScript file?",
-    choiceA: "href",
-    choiceB: "src",
-    choiceC: "class",
-    choiceD: "index",
-    correctAnswer: "b"},
-        
-    
+    question: "A very usefull tool used during development and debugging for printing content to the debugger is",
+    choiceA: "Javascript",
+    choiceB: "terminal / bash",
+    choiceC: "for loops",
+    choiceD: "console.log",
+    correctAnswer: "d"},  
+
     ];
 // Other global variables
 var finalQuestionIndex = quizQuestions.length;
@@ -94,7 +79,7 @@ function generateQuizQuestion(){
     buttonD.innerHTML = currentQuestion.choiceD;
 };
 
-// Start Quiz function starts the TimeRanges, hides the start button, and displays the first quiz question.
+// Starts the timer, hides the start button, and displays the first quiz question.
 function startQuiz(){
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "none";
@@ -188,7 +173,7 @@ function replayQuiz(){
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 76;
+    timeLeft = 60;
     score = 0;
     currentQuestionIndex = 0;
 }

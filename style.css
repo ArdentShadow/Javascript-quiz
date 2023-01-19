@@ -9,12 +9,12 @@ h2{
     li{
         padding-bottom: 3px;
         color: white;
-        text-shadow: 1.5px 1px 3px black;
+        text-shadow: 1.5px 1px 3px white;
         list-style-type: none;
     }
     
     p{
-        color: black;
+        color: white;
         text-shadow: .5px .5px white;
         text-align: center;
         font-size: xx-large;
@@ -65,9 +65,9 @@ h2{
     
     #timer{
         font-family: sans-serif;
-        background-color: #5a69f0;
+        background-color: #2E3532;
         color: #eeeeee;
-        font-size: x-large;
+        font-size: xx-large;
         text-shadow: .5px .5px black;
         text-align: center;
     }
@@ -98,7 +98,7 @@ h2{
         border-color: silver;
         border-bottom-style: groove;
         padding-bottom: .3rem;
-        background: lightsteelblue;
+        background: #ED254E;
     }
     
     #highscore-header{
